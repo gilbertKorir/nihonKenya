@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EAE9"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/artifika"
+        android:text="ITEM"
+        android:textColor="#0E379F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:fontFamily="@font/artifika"
+        android:text="QTY"
+        android:textColor="#0E379F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:fontFamily="@font/artifika"
+        android:text="AMOUNT"
+        android:textColor="#0E379F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="Results"
+        android:textColor="#0B0A0A"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/artifika"
+        android:text="UFACID 90% OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="STPP OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="SODIUM SULPHATE OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="SIMET OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="SODIUM GLUCONATE OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="SODIUM PERBORATE OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="CMC OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/artifika"
+        android:text="LAVNDER CLEAR OT"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/qt1"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="0.80"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/qt2"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="0.20"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/qt1"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/qt3"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="4.00"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/qt2"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/qt4"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="0.50"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/qt3"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/qt5"
+        android:layout_width="48dp"
+        android:layout_height="27dp"
+        android:text="0.20"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/qt4"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/qt6"
+        android:layout_width="48dp"
+        android:layout_height="26dp"
+        android:text="0.30"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/qt5"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/qt7"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="0.10"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/qt6"
+        app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/qt8"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:text="0.03"
+        android:textColor="#0B0909"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/qt7"
+        app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/am1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="240.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/qt1"
+        app:layout_constraintTop_toTopOf="@+id/qt1" />
+
+    <TextView
+        android:id="@+id/am2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/am1"
+        app:layout_constraintTop_toTopOf="@+id/qt2" />
+
+    <TextView
+        android:id="@+id/am3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="340.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/am2"
+        app:layout_constraintTop_toTopOf="@+id/qt3" />
+
+    <TextView
+        android:id="@+id/am5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/am4"
+        app:layout_constraintTop_toTopOf="@+id/qt5" />
+
+    <TextView
+        android:id="@+id/am4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/am3"
+        app:layout_constraintTop_toTopOf="@+id/qt4" />
+
+    <TextView
+        android:id="@+id/am6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/am5"
+        app:layout_constraintTop_toTopOf="@+id/qt6" />
+
+    <TextView
+        android:id="@+id/am7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/am6"
+        app:layout_constraintTop_toTopOf="@+id/qt7" />
+
+    <TextView
+        android:id="@+id/am8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="75.00"
+        android:textColor="#1DB123"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/am7"
+        app:layout_constraintTop_toTopOf="@+id/qt8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
