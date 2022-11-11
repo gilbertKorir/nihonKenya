@@ -7,24 +7,12 @@
    android:background="@drawable/bga"
     tools:context=".DashboardActivity">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="142dp"
-        android:layout_height="111dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logo" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="274dp"
         android:layout_height="55dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="48dp"
         android:fontFamily="@font/artifika"
         android:gravity="center"
@@ -35,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView2"
@@ -137,9 +125,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="332dp"
-        android:layout_height="117dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="322dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bgu1" />
 
