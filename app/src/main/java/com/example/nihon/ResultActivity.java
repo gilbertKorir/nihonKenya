@@ -15,7 +15,7 @@ public static final String QTY = "QTY";
 
 private static final DecimalFormat df = new DecimalFormat("0.00");
 private double finalVol;
-TextView q1,q2,q3,q4,q5,q6,q7,q8;
+TextView q1,q2,q3,q4,q5,q6,q7,q8,m1,m2,m3,m4,m5,m6,m7,m8;
 private int qnty;
 
     @Override
@@ -37,20 +37,35 @@ private int qnty;
         q7 = findViewById(R.id.qt7);
         q8 = findViewById(R.id.qt8);
 
-        //calculating amounts
-        q1.setText(String.valueOf(df.format(qnty * 0.08+"0")));
-        q2.setText(String.valueOf(df.format(qnty * 0.02+"0")));
-        q3.setText(String.valueOf(df.format(qnty * 0.04+"0")));
-        q4.setText(String.valueOf(df.format(qnty * 0.05+"0")));
-        q5.setText(String.valueOf(df.format(qnty * 0.02+"0")));
-        q6.setText(String.valueOf(df.format(qnty * 0.03+"0")));
-        q7.setText(String.valueOf(df.format(qnty * 0.01+"0")));
-        q8.setText(String.valueOf(df.format(qnty * 0.003+"0")));
+        //calculating quantities
+        q1.setText(df.format(qnty * 0.08));
+        q2.setText(df.format(qnty * 0.02));
+        q3.setText(df.format(qnty * 0.04));
+        q4.setText(df.format(qnty * 0.05));
+        q5.setText(df.format(qnty * 0.02));
+        q6.setText(df.format(qnty * 0.03));
+        q7.setText(df.format(qnty * 0.01));
+        q8.setText(df.format(qnty * 0.003));
 
         //Amount listing
+        m1 = findViewById(R.id.am1);
+        m2 = findViewById(R.id.am2);
+        m3 = findViewById(R.id.am3);
+        m4 = findViewById(R.id.am4);
+        m5 = findViewById(R.id.am5);
+        m6 = findViewById(R.id.am6);
+        m7 = findViewById(R.id.am7);
+        m8 = findViewById(R.id.am8);
 
-
-
+        //calculating amounts
+        m1.setText(df.format(qnty*24.00));
+        m2.setText(df.format(qnty*5.00));
+        m3.setText(df.format(qnty*34.00));
+        m4.setText(df.format(qnty*7.50));
+        m5.setText(df.format(qnty*6.00));
+        m6.setText(df.format(qnty*7.50));
+        m7.setText(df.format(qnty*2.00));
+        m8.setText(df.format(qnty*7.50));
 
         //title
         getSupportActionBar().setTitle("Output");
