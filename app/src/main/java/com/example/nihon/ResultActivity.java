@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
 
 public class ResultActivity extends AppCompatActivity {
 public static final String QTY = "QTY";
@@ -78,7 +79,7 @@ public double d1,d2;
 
         //total
         allTotal = findViewById(R.id.totalAmount);
-        allTotal.setText("Your total amount will be: " + df.format(all));
+        allTotal.setText("The total amount you will spent on " + qnty + " litres of the product" + "will be Ksh " + df.format(all));
 
         //title
         getSupportActionBar().setTitle("Output");
