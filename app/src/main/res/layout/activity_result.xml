@@ -25,7 +25,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
+        android:layout_marginStart="90dp"
         android:fontFamily="@font/artifika"
         android:text="QTY"
         android:textColor="#0E379F"
@@ -38,7 +38,7 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
+        android:layout_marginStart="50dp"
         android:fontFamily="@font/artifika"
         android:text="AMOUNT"
         android:textColor="#0E379F"
@@ -345,5 +345,19 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/am7"
         app:layout_constraintTop_toTopOf="@+id/qt8" />
+
+    <TextView
+        android:id="@+id/totalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/acme"
+        android:textColor="#090909"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qt8" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

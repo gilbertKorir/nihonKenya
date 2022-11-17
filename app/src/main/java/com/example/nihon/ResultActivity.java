@@ -2,6 +2,7 @@ package com.example.nihon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -15,9 +16,13 @@ public static final String QTY = "QTY";
 
 private static final DecimalFormat df = new DecimalFormat("0.00");
 private double finalVol;
-TextView q1,q2,q3,q4,q5,q6,q7,q8,m1,m2,m3,m4,m5,m6,m7,m8;
+TextView q1,q2,q3,q4,q5,q6,q7,q8,m1,m2,m3,m4,m5,m6,m7,m8,allTotal;
 private int qnty;
+public int amt;
+public double d1,d2;
 
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +71,14 @@ private int qnty;
         m6.setText(df.format(qnty*7.50));
         m7.setText(df.format(qnty*2.00));
         m8.setText(df.format(qnty*7.50));
+
+        //calculating the cumulative amount
+        d1 = qnty*24.00 + qnty*5.00 + qnty*34.00 +qnty*7.50 + qnty*6.00 + qnty*7.50 +qnty*2.00 +qnty*7.50;
+        double all = Double.valueOf(d1);
+
+        //total
+        allTotal = findViewById(R.id.totalAmount);
+        allTotal.setText("Your total amount will be: " + df.format(all));
 
         //title
         getSupportActionBar().setTitle("Output");
